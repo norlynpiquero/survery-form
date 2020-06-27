@@ -1,0 +1,78 @@
+body {
+    color: #696969;
+    font-family: "Frankilin Gothic Medium", "Arial Narrow", "Arial", sans-serif;
+}
+
+#title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+#description {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+form {
+    text-emphasis: left;
+    border: 3px solid #a9a9a9;
+    box-shadow: 2px 2px 2px #999;
+    padding: 1.5rem;
+    background-color: whitesmoke;
+    margin: 50px;
+}
+
+.form-example {
+    padding: 0.5rem;
+}
+
+input {
+    margin-left: 3px;
+}
+
+#number {
+    width: 90px;
+}
+
+#name-label, #email-label, #number-label, [for="course-select"], [class="label"], [for="comment"] {
+    font-weight: bolder;
+}
+
+textarea {
+    padding: 10px;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+
+[for="comment"] {
+    display: block;
+    margin-bottom: 15px;
+}
+
+#submit {
+    text-align: center;
+}
+
+[type="submit"] {
+    font-size: 25px;
+    border: 3px solid #a9a9a9;
+    border-radius: 5px;
+}
+[type="submit"]:hover {
+    background-color: #a9a9a9;
+    color: whitesmoke;
+}
+
+footer {
+    background: #a9a9a9;
+    color: white;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 20px;
+}
+

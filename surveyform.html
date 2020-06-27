@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="surveyform.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">College of Engineering Degree Satisfaction Survey</h1>
+    <p id="description"><i>This is a simple survey asking Engineering graduates if you really loved the course you took and if given a chance would you still choose the same course the second time around.</i></p>
+
+    <form action="" method="get" id="survey-form">
+
+        <!-- Name -->
+        <div class="form-example">
+            <label for="name" id="name-label">Enter your name: </label>
+            <input type="text" name="name" id="name" placeholder="Jane Doe" required/>
+        </div>
+
+        <!-- Email -->
+        <div class="form-example">
+            <label for="email" id="email-label">Enter your email:</label>
+            <input type="email" name="email" id="email" placeholder="username@domain" required/>
+        </div>
+
+        <!-- Number -->
+        <div class="form-example">
+            <label for="age" id="number-label">How old are you? </label>
+            <input type="number" name="age" id="number" placeholder="Enter your age" min="21" max="65" required/>
+        </div>
+
+        <!-- Dropdown Select -->
+        <div class="form-example">
+            <label for="course-select">What Engineering course did you take in College?</label>
+            <select name="course-select" id="dropdown">
+                <option value="">Select the course you took</option>
+                <option value="1">Aeronautical Engineering</option>
+                <option value="2">Civil Engineering</option>
+                <option value="3">Computer Engineering</option>
+                <option value="4">Chemical Engineering</option>
+                <option value="5">Electrical Engineering</option>
+                <option value="6">Electronics Engineering</option>
+                <option value="7">Geodetic Engineering</option>
+                <option value="8">Industrial Engineering</option>
+                <option value="9">Marine Engineering</option>
+                <option value="10">Mechanical Engineering</option>
+            </select>
+        </div>
+
+        <!-- Radio Select -->
+        <div class="form-example">
+            <p class="label">Why did you choose the course you took in College?</p>
+
+            <div>
+                <input type="radio" id="first" name="why" value="first" checked>
+                <label for="first">My Parents said so...</label>
+            </div>
+
+            <div>
+                <input type="radio" id="second" name="why" value="second" checked>
+                <label for="second">Peer pressure</label>
+            </div>
+
+            <div>
+                <input type="radio" id="third" name="why" value="third" checked>
+                <label for="third">Because of prestige. It sounded so cool.</label>
+            </div>
+
+            <div>
+                <input type="radio" id="fourth" name="why" value="fourth" checked>
+                <label for="fourth">I thruthfully want to become and Engineer</label>
+            </div>
+
+        </div>
+
+        <!-- Checkbox Select -->
+        <div class="form-example">
+            <p class="label">Say there's a time machine, would you still choose the course you took in College?</p>
+
+            <div>
+                <input type="checkbox" id="no" name="no" value="one">
+                <label for="no">No, I would choose what I really love.</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="yes" name="yes" value="two">
+                <label for="yes">Definitely yes. I really loved it afterall.</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="maybe" name="maybe" value="three">
+                <label for="maybe">I hate to admit it but up until now I'm still undecided.</label>
+            </div>
+        </div>
+
+        <!-- Textarea -->
+        <div class="form-example">
+            <label for="comment">Tell us your story: </label>
+            <textarea name="comment" id="comment" cols="83" rows="10"></textarea>
+        </div>
+
+        <!-- Submit -->
+        <div id="submit">
+            <input type="submit" value="Submit Answers">
+        </div>
+        
+    </form>
+
+    <footer>&copy; Norlyn Piquero</footer>
+</body>
+</html>
